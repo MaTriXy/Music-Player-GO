@@ -1,37 +1,62 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion '27.0.3'
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.iven.musicplayergo"
         minSdkVersion 21
-        targetSdkVersion 27
-        versionCode 16
-        versionName "1.5.2"
+        targetSdkVersion 29
+        versionCode 133
+        versionName "4.0.1"
     }
+
+    //retrieve version number
+    applicationVariants.all { variant ->
+        variant.resValue "string", "versionName", variant.versionName
+    }
+
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            zipAlignEnabled true
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-}
 
-//force the usage of the latest support libs version
-configurations.all {
-    resolutionStrategy {
-        eachDependency { DependencyResolveDetails details ->
-            if (details.requested.group == 'com.android.support' && !details.requested.name.contains('multidex')) {
-                details.useVersion "27.0.2"
-            }
-        }
+    // Configure only for each module that uses Java 8
+    // language features (either in its source code or
+    // through dependencies).
+    compileOptions {
+        encoding = 'UTF-8'
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
     }
 }
 
 dependencies {
-    implementation 'com.simplecityapps:recyclerview-fastscroll:1.0.17'
-    implementation 'com.android.support:support-v4:27.0.2'
-    implementation 'com.sothree.slidinguppanel:library:3.4.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+
+    api 'com.google.android.material:material:1.0.0'
+
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.media:media:1.1.0'
+    implementation 'androidx.preference:preference-ktx:1.1.0'
+
+    implementation 'androidx.browser:browser:1.2.0'
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    implementation 'com.reddit:indicator-fast-scroll:1.2.1'
+    implementation 'com.afollestad.material-dialogs:core:3.1.1'
+    implementation 'com.afollestad.material-dialogs:bottomsheets:3.1.1'
+    implementation 'com.afollestad:recyclical:1.1.1'
+    implementation 'de.halfbit:edge-to-edge:0.8'
 }

@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/sliding_panel"
+    android:id="@+id/mainView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="bottom"
+    android:fitsSystemWindows="true"
     android:orientation="vertical"
-    sothree:umanoScrollableView="@+id/songs_rv"
-    sothree:umanoShadowHeight="2dp"
-    tools:context="com.iven.musicplayergo.MainActivity">
+    tools:context=".MainActivity">
 
-    <!-- ARTISTS LAYOUT -->
-    <include layout="@layout/artists_list" />
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-    <!-- SLIDING LAYOUT -->
-    <include layout="@layout/sliding_panel" />
-</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <!-- CONTROLS PANEL -->
+    <include layout="@layout/player_controls_panel" />
+</LinearLayout>

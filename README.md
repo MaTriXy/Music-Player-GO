@@ -1,65 +1,78 @@
-# Music-Player-GO [![API](https://img.shields.io/badge/API-21%2B-blue.svg?style=flat-square)](https://android-arsenal.com/api?level=21)
-<a href="https://play.google.com/apps/testing/com.iven.musicplayergo" target="_blank">
-  <img alt="Get it on Google Play"
-       src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="60"/>
-</a>
+# <img src ="https://upload.wikimedia.org/wikipedia/commons/b/b5/Kotlin-logo.png" width=24> Music-Player-GO
+
+### Very simple, nice, privacy-friendly and **original** local Android Music Player
 
 
+[![Privacy policy](https://img.shields.io/static/v1?label=Privacy-policy&message=read&color=ef9a9a)](https://github.com/enricocid/Music-Player-GO/blob/master/Privacy.md)
+[![FAQ](https://img.shields.io/static/v1?label=FAQ&message=read&color=ce93d8)](https://github.com/enricocid/Music-Player-GO/blob/master/Faq.md)
+[![3rd party libs and tools](https://img.shields.io/static/v1?label=Libs/tools&message=9&color=9fa8da)](https://github.com/enricocid/Music-Player-GO/blob/master/Libs.md)
+[![Contributors](https://img.shields.io/static/v1?label=Contributors&message=21&color=81d4fa)](https://github.com/enricocid/Music-Player-GO/blob/master/Contributors.md)
+[![Supported formats](https://img.shields.io/static/v1?label=Formats&message=read&color=80cbc4)](https://github.com/enricocid/Music-Player-GO/blob/master/FORMATS.MD)
 
-### Very slim music player (<900KB)
-
-### Current version: 1.5.2 (beta)
-
-![Screenshots](https://raw.githubusercontent.com/enricocid/Music-Player-GO/master/art7.png)
-
-<a href="https://play.google.com/apps/testing/com.iven.musicplayergo" target="_blank">
-  <img alt="Get it on Google Play"
-       src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="60"/>
-</a>
+[![API](https://img.shields.io/static/v1?label=API&message=21&color=a5d6a7)](https://developer.android.com/about/versions/android-5.0.html)
+[![TAG](https://img.shields.io/static/v1?label=Tag&message=v4.0.1&color=ffe082)](https://github.com/enricocid/Music-Player-GO/releases/tag/v4.0.1)
 
 
+<img align="right" src="https://raw.githubusercontent.com/enricocid/Music-Player-GO/master/mpgo-4.gif" height="500px"/>
 
-### Very simple and nice UI "Everything in one UI", the way I'd like it to be:
 
-- Music organized by artist;
-- Fast scroller;
-- Sliding up panel containing controls (when collapsed) and the artist albums/songs (when expanded);
-- Dark status bar icons for light accents
-(according to https://material.io/guidelines/style/color.html#color-color-palette);
-- No need to navigate between activities;
+# Features:
 
-### Open settings directly from UI. Available settings: 
+- **Tabbed UI**: artists, all songs, folders and settings
+- **Settings**:
+  - **Themes**: light, dark and automatic (following the system settings on Android Q and battery level on pre-Q devices)
+  - 19 awesome **accents**
+  - Edge-to-edge (for >= Oreo 8.1)
+  - Active tabs management
+  - Audio focus and headsets plug management toggles
 
-- Equalizer;
-- Immersive Mode;
-- UI inversion;
-- UI accents;
-- Link to git page;
+- **Save/restore last reproduced song/progress**
 
-![Screenshots](https://raw.githubusercontent.com/enricocid/Music-Player-GO/master/settings2.gif)
+- Bottom controls panel containing:
+  - Currently reproduced song
+    > Tip: long click on it to quickly jump to the artist's details
+  - Play/pause
+  - **Queue** button
+  - **Loved songs** button
 
-### Minimal code:
+- **Now playing** dialog showing the classical media controls: seekbar, equalizer, skip, play/pause, repeat 1x, **add to loved songs**, current volume step fine control
+  > Tip: click on played song to quickly jump to the artist's details
 
-- Based on nothing: it was written from scratch besides few snippets here and there;
-- Dependencies used: 
+- **Artist's details** showing its albums/songs. Shuffle all its songs or the selected album
+  > Tip: click on album's title to quickly jump back to it
 
-  - Sliding up panel by @umano (https://github.com/umano/AndroidSlidingUpPanel);
-  - Android Support Library v4;
-  - RecyclerView-FastScroll by @timusus (https://github.com/timusus/RecyclerView-FastScroll);
+- Simple **queue** management
+  > Tip: to clear queue long click on queue button
 
-### Other features: 
+- Loved songs: You can now bookmark a song from songs lists and now playing dialog (in this case current position will be saved too!)
+  > Tip: to clear the list long click on loved songs button
 
-- Pause/resume when the headsets are (dis)connected;
-- Simple audio focus (notifications, calls, or other media apps) management;
+- **Landscape** support
 
-### French translations by KowalskiOmniROM
-https://github.com/KowalskiOmniROM
+- Search
+- **Sort** options (default, ascending, descending)
+- Shuffle options
+- Open audio files from outside the app
+- Pause/resume when the headsets are plugged in/out
+- Simple audio focus management
 
-### Screenshots made with Screener:
-https://play.google.com/store/apps/details?id=de.toastcode.screener
 
-### GIF made with DU Recorder:
-https://play.google.com/store/apps/details?id=com.duapps.recorder
+# Download
 
-### Some icons are from materialdesignicons.com
-https://materialdesignicons.com/
+[<img alt="Get it on Google Play" height="80" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png">](https://play.google.com/store/apps/details?id=com.iven.musicplayergo)
+[<img alt="Get it on F-Droid" height="80" src="https://gitlab.com/fdroid/artwork/raw/master/badge/get-it-on.png">](https://f-droid.org/repository/browse/?fdid=com.iven.musicplayergo)
+[<img alt="Get it on Github" height="80" src="https://raw.githubusercontent.com/flocke/andOTP/master/assets/badges/get-it-on-github.png">](https://github.com/enricocid/Music-Player-GO/releases)
+
+
+# License
+
+Copyright (C) 2020 **Enrico D'Ortenzio**
+
+Licensed under the GNU General Public License, Version 3.0 (the "License");
+You may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.gnu.org/licenses/#GPL
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and limitations under the License.
