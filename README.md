@@ -1,78 +1,136 @@
-# <img src ="https://upload.wikimedia.org/wikipedia/commons/b/b5/Kotlin-logo.png" width=24> Music-Player-GO
+<p align="center">
+<img width="128" src="https://github.com/enricocid/Music-Player-GO/blob/main/fastlane/metadata/android/en-US/images/icon.png">
+</p>
 
-### Very simple, nice, privacy-friendly and **original** local Android Music Player
+<h1 align="center">Music Player GO</h1>
+
+<p align="center">
+<img width="400" src="art16.gif">
+</p>
+
+<p align="center">
+  <!-- Latest Release -->
+    <a href="https://github.com/enricocid/Music-Player-GO/releases">
+      <img alt="GitHub release"
+      src="https://img.shields.io/static/v1?label=Tag&message=v4.4.24&color=58F5D1">
+    </a>
+   <!-- Minimum SDK -->
+    <img alt="Minimum SDK" src="https://img.shields.io/static/v1?label=API&message=21&color=32B5ED">
+     <!-- Android CI integration -->
+    <a href="https://github.com/enricocid/Music-Player-GO/actions">
+    <img alt="CI" src="https://github.com/enricocid/Music-Player-GO/workflows/Android%20CI/badge.svg">
+    </a>
+    <!-- Support Ukraine -->
+    <a href="https://war.ukraine.ua/support-ukraine/">
+    <img alt="Support Ukraine" src="https://img.shields.io/static/v1?label=Support Ukraine&message=now!&color=005BBB">
+    </a>
+</p>
+
+  <h3 align="center">
+  <a href="https://hosted.weblate.org/engage/music-player-go/">
+    <img src="https://hosted.weblate.org/widgets/music-player-go/-/287x66-white.png" />
+  </a>
+  </h3>
+
+  <h3 align="center">
+  <a href="PRIVACY_POLICY.md">Privacy policy</a> |
+  <a href="FAQ.md">FAQ</a> |
+  <a href="LIBS.md">3rd party components</a> |
+  <a href="CONTRIBUTORS.md">Contributors</a> |
+  <a href="FORMATS.md">Formats</a>
+  </h3>
+
+  </h3>
 
 
-[![Privacy policy](https://img.shields.io/static/v1?label=Privacy-policy&message=read&color=ef9a9a)](https://github.com/enricocid/Music-Player-GO/blob/master/Privacy.md)
-[![FAQ](https://img.shields.io/static/v1?label=FAQ&message=read&color=ce93d8)](https://github.com/enricocid/Music-Player-GO/blob/master/Faq.md)
-[![3rd party libs and tools](https://img.shields.io/static/v1?label=Libs/tools&message=9&color=9fa8da)](https://github.com/enricocid/Music-Player-GO/blob/master/Libs.md)
-[![Contributors](https://img.shields.io/static/v1?label=Contributors&message=21&color=81d4fa)](https://github.com/enricocid/Music-Player-GO/blob/master/Contributors.md)
-[![Supported formats](https://img.shields.io/static/v1?label=Formats&message=read&color=80cbc4)](https://github.com/enricocid/Music-Player-GO/blob/master/FORMATS.MD)
+# Table of contents
 
-[![API](https://img.shields.io/static/v1?label=API&message=21&color=a5d6a7)](https://developer.android.com/about/versions/android-5.0.html)
-[![TAG](https://img.shields.io/static/v1?label=Tag&message=v4.0.1&color=ffe082)](https://github.com/enricocid/Music-Player-GO/releases/tag/v4.0.1)
-
-
-<img align="right" src="https://raw.githubusercontent.com/enricocid/Music-Player-GO/master/mpgo-4.gif" height="500px"/>
+- [Description](#description)
+- [Download](#download)
+- [Features](#features)
+- [Translations](#translations)
+- [Contributing](#contributing)
+- [License](#license)
 
 
-# Features:
+# Description
 
-- **Tabbed UI**: artists, all songs, folders and settings
-- **Settings**:
-  - **Themes**: light, dark and automatic (following the system settings on Android Q and battery level on pre-Q devices)
-  - 19 awesome **accents**
-  - Edge-to-edge (for >= Oreo 8.1)
-  - Active tabs management
-  - Audio focus and headsets plug management toggles
-
-- **Save/restore last reproduced song/progress**
-
-- Bottom controls panel containing:
-  - Currently reproduced song
-    > Tip: long click on it to quickly jump to the artist's details
-  - Play/pause
-  - **Queue** button
-  - **Loved songs** button
-
-- **Now playing** dialog showing the classical media controls: seekbar, equalizer, skip, play/pause, repeat 1x, **add to loved songs**, current volume step fine control
-  > Tip: click on played song to quickly jump to the artist's details
-
-- **Artist's details** showing its albums/songs. Shuffle all its songs or the selected album
-  > Tip: click on album's title to quickly jump back to it
-
-- Simple **queue** management
-  > Tip: to clear queue long click on queue button
-
-- Loved songs: You can now bookmark a song from songs lists and now playing dialog (in this case current position will be saved too!)
-  > Tip: to clear the list long click on loved songs button
-
-- **Landscape** support
-
-- Search
-- **Sort** options (default, ascending, descending)
-- Shuffle options
-- Open audio files from outside the app
-- Pause/resume when the headsets are plugged in/out
-- Simple audio focus management
+Welcome to **Music Player GO**, your go-to local Android music player that strikes the perfect balance between simplicity and performance. Dive into a world where your music is organized intuitively, offering a minimal yet fully-featured experience!
 
 
 # Download
 
-[<img alt="Get it on Google Play" height="80" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png">](https://play.google.com/store/apps/details?id=com.iven.musicplayergo)
-[<img alt="Get it on F-Droid" height="80" src="https://gitlab.com/fdroid/artwork/raw/master/badge/get-it-on.png">](https://f-droid.org/repository/browse/?fdid=com.iven.musicplayergo)
-[<img alt="Get it on Github" height="80" src="https://raw.githubusercontent.com/flocke/andOTP/master/assets/badges/get-it-on-github.png">](https://github.com/enricocid/Music-Player-GO/releases)
+[<img src="https://raw.githubusercontent.com/enricocid/fdroid-custom-badges/main/badge_get-it-on.png"
+    alt="Get it on F-Droid"
+    height="80">](https://f-droid.org/packages/com.iven.musicplayergo/)
+[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+    alt="Get it on Google Play"
+    height="80">](https://play.google.com/store/apps/details?id=com.iven.musicplayergo)
+  
+# Features
 
+- Minimal interface
+- Equalizer
+- Music organised by artist, albums, songs and folders; tabs are organisable
+- Light, dark, automatic themes and accents
+- Pure black theme
+- Queue
+- Sleep timer
+- Audio focus, precise volume and headset management
+- Now playing, embedded covers, search, playback speed, pause on completion, sorting, shuffle, fast-seeking, and more!
+ 
+
+# Translations
+
+We currently need help translating the project so our app can be more accessible to everyone worldwide!
+The image below is an overview of the language translations that are currently being worked on:
+- The smaller red bars indicate that there is a significant amount of translating needed
+- We would ideally like each language to reach to green (less translations needed)
+- Please feel free to add new languages that are not currently being translated
+
+In order to contribute please use [Weblate](https://hosted.weblate.org/engage/music-player-go/). 
+You will need to create an account with Weblate (if you don't already have one) in order to do so.
+
+It would also be greatly appreciated if you could send some [love](https://weblate.org/donate/new/) to the Weblate contributors who made easy translations possible :)
+By clicking the link, you will be directed to the Weblate monetary donations page, where you will also be prompted to sign in or create an account.
+
+<a href="https://hosted.weblate.org/engage/music-player-go/">
+<img src="https://hosted.weblate.org/widgets/music-player-go/-/horizontal-auto.svg" alt="Stato traduzione" />
+</a>
+
+# Contributing
+
+Thank you for considering contributing to Music Player GO! We welcome contributions from the community to help improve and grow this project. Below are some guidelines for front and back end contributions. If you would like to contribute towards translations, please see the above [Translations](#translations) section.
+
+### How to Contribute
+
+* Feel free to submit pull requests for any contributions, using a [feature branch](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow).
+* Once you have submitted a pull request, we will need to review and appove it before it can be merged with the project.
+* After your contribution has been added we can add you to our list of [contributors](CONTRIBUTORS.md)!
+* We would greatly appreciate if you could look at the [issues](https://github.com/enricocid/Music-Player-GO/issues) tab to see what needs fixing, especially if there are any bugs!!
+* While there is no strict coding style for this project, we encourage you to strive for consistency within the existing codebase and UI following with the minimalistic aesthetic of the application.
+* Please make sure to look at the the [FAQ's](FAQ.md), [Privacy Policy](PRIVACY_POLICY.md), [Formats](FORMATS.md), [libraries we utilize](LIBS.md), and [our license](LICENSE.md) before you get started to familiairze yourself with our app and frameworks.
+
+
+To get started, you would need to clone/fork this repository:
+- Note *user* refers to your GitHub username
+
+### Windows Terminal commands:
+
+git clone https://github.com/*user*/Music-Player-GO.git
+
+cd Music-Player-GO
+
+### Mac Terminal commands:
+
+git clone https://github.com/*user*/Music-Player-GO.git
+
+cd Music-Player-GO
 
 # License
 
-Copyright (C) 2020 **Enrico D'Ortenzio**
 
-Licensed under the GNU General Public License, Version 3.0 (the "License");
-You may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+2024 &copy; **Enrico D'Ortenzio**
 
-   http://www.gnu.org/licenses/#GPL
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and limitations under the License.
+This repository is copylefted libre software, licensed [GPLv3](https://www.gnu.org/licenses/#GPL), as described in the [LICENSE](LICENSE.md) file.
+Use, study, change and share at will; with all.

@@ -1,13 +1,18 @@
 package com.iven.musicplayergo.ui
 
-import com.iven.musicplayergo.music.Music
-
 interface UIControlInterface {
-    fun onAccentUpdated()
-    fun onArtistOrFolderSelected(artistOrFolder: String, isFolder: Boolean)
-    fun onSongSelected(song: Music?, songs: List<Music>?)
-    fun onShuffleSongs(songs: MutableList<Music>?)
-    fun onLovedSongsUpdate(clear: Boolean)
+    fun onAppearanceChanged(isThemeChanged: Boolean)
+    fun onOpenNewDetailsFragment()
+    fun onArtistOrFolderSelected(artistOrFolder: String, launchedBy: String)
+    fun onFavoritesUpdated(clear: Boolean)
+    fun onFavoriteAddedOrRemoved()
     fun onCloseActivity()
-    fun onAddToQueue(song: Music)
+    fun onAddToFilter(stringsToFilter: List<String>?)
+    fun onFiltersCleared()
+    fun onDenyPermission()
+    fun onOpenPlayingArtistAlbum()
+    fun onOpenEqualizer()
+    fun onOpenSleepTimerDialog()
+    fun onEnableEqualizer()
+    fun onUpdateSortings()
 }
